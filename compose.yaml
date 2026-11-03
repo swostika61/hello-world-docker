@@ -1,0 +1,4 @@
+services:
+  hello-world:
+    image: swostika19/hello-world-js:1.0
+    container_name: hello-world-container
