@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: hello-world
+spec:
+  template:
+    spec:
+      containers:
+        - name: hello
+          image: swostika19/hello-world-js:1.0
+      restartPolicy: Never
+  backoffLimit: 2
